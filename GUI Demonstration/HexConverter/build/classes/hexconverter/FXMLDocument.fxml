@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="200" prefWidth="320" xmlns:fx="http://javafx.com/fxml/1" fx:controller="hexconverter.FXMLDocumentController">
+    <children>
+        <TextField layoutX="5" layoutY="60" minWidth="200"  promptText="Convert Hex to English"  fx:id="hexText"/>
+        <Button layoutX="215" layoutY="60" text="Convert to English" onAction="#convertToEnglish" fx:id="convertHex"/>
+        
+        <TextField layoutX="5" layoutY="90" minWidth="200" promptText="Convert English to Hex" fx:id="englishText"/>  
+        <Button layoutX="215" layoutY="90" text="Convert to Hex" onAction="#convertToHex" fx:id="convertEng"/>
+        
+    </children>
+</AnchorPane>
