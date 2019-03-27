@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Time Class">
+  <ClassDiagramComponents>
+    <Class name="Time" package="" visibility="public" xPosition="928.0" yPosition="328.0">
+      <Fields>
+        <Field name="hours" type="int" visibility="private"/>
+        <Field name="mins" type="int" visibility="private"/>
+        <Field name="secs" type="int" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods>
+        <Method name="Time" returnType="void" visibility="public"/>
+        <Method name="Time" returnType="int" visibility="public">
+          <Argument type="int" name="hours"/>
+          <Argument type="int" name="mins"/>
+        </Method>
+        <Method name="Time" returnType="int" visibility="public">
+          <Argument type="int" name="hours"/>
+          <Argument type="int" name="mins"/>
+          <Argument type="int" name="secs"/>
+        </Method>
+        <Method name="setSeconds" returnType="int" visibility="public">
+          <Argument type="int" name="secs"/>
+        </Method>
+        <Method name="setMinutes" returnType="int" visibility="public">
+          <Argument type="int" name="mins"/>
+        </Method>
+        <Method name="setHours" returnType="int" visibility="public">
+          <Argument type="int" name="hours"/>
+        </Method>
+        <Method name="equals" returnType="Time" visibility="public">
+          <Argument type="Time" name="otherTime"/>
+        </Method>
+      </Methods>
+    </Class>
+    <Interface name="Comparable&lt;E&gt;" package="" visibility="public" xPosition="1299.0" yPosition="449.0">
+      <Methods>
+        <Method name="compareTo" returnType="int" visibility="public">
+          <Argument type="E" name="e"/>
+        </Method>
+      </Methods>
+    </Interface>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <ImplementsRelation name="&lt;&lt;implements&gt;&gt;" source="Time" target="Comparable&lt;E&gt;"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
